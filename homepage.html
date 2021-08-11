@@ -2,82 +2,41 @@
 <html lang="en">
 
 <head>
-<link ref="stylesheet" type="text/css" href="./Style.css">
-<script src = './script.js' ></script>
-<title>Talent Acquisition Specialist</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link ref="stylesheet" type="text/css" href="./Style.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+<script src = './script.js' ></script>
+<title>Talent Acquisition Specialist</title>
 
 </head>
 
+<</head>
 <body>
-<button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Jobs', this, 'blue')">Jobs</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+ <ul class="tabs">
+   <li data-tab-target="#Home" class="active tab">Home</li>
+   <li data-tab-target="#Career Opportunities" class="tab">Career Opportunities</li>
+   <li data-tab-target="#Contact" class="tab">Contact</li>
+   <li data-tab-target="#About" class="tab">About</li>
+ </ul>
 
-<div id="Home" class="tabcontent">
-<h1></h1>
-<h2></h2>
-
-<!--add everything accordingly in later stage-->
-
-<h3> Recruitment- Term ignored by many of the companies</h3>
-<p>We all know the current market scenario, how recruiters are being ignored not only by companies but by candidates as well</p>
-<blockquote>
-<p>A good recruiting process focuses and aligns recruiters to deliver the best to the organization. Ultimately, recruiting really should be viewed as a business partner, someone who is critical to the sucess of the business
-</p>
-<cite>Mathew Cadwell-Head Of Talent,Instacart</cite>
-</div>
-
-
-
-<div id="Jobs" class="tabcontent">
-<h1> One must choose a right career path to determine their future</h1>
-
-<!-- need to add current openings, click links to direct to their respective openings site-->
-
- </div>
-
-
-
-<div id="Contact" class="tabcontent">
-<p> Get in touch. <a href="">Click for contact details</a></p>
-<h3> Or fill up the form and let me get back to you</h3>
-
-<!--make form, include name, contact no, email, resume-->
-
-
-</div>
-
-
-
-<div id="About" class="tabcontent">
-<p>A recruiter with 5+ years of experience</p>
-<!--write about your experience, also add looking for a recruiter, hire me button-->
-
-  </div>
-
-
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
-   
+ <div class="tab-content">
+   <div id="home" data-tab-content class="active">
+     <h1>Home</h1>
+     <p>This is where I say something</p>
+   </div>
+   <div id="Career Opportunities" data-tab-content>
+     <h1>Current Open Roles</h1>
+     <p>This is where I say something</p>
+   </div>
+   <div id="Contact" data-tab-content>
+     <h1>Meet for a cup of coffee? Need to ask something?Click here</h1>
+     <!--Add href link with click here-->
+     <p>This is where I say something</p>
+   </div>
+   <div id="About" data-tab-content>
+     <h1>About me</h1>
+     <p>This is where I say something</p>
+   </div>
 </body>
 </html> 
