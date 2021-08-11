@@ -1,7 +1,7 @@
-/* Place your CSS styles in this file */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
 html {
-     background-image: url("img_homepage.jpg") no repeat center fixed;
+     background-image: url("img_homepage.jpg") repeat center fixed;
 }
 
 data-tab-content {
