@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+<head>
+<link ref="stylesheet" type="text/css" href="style.css">
+
+<title>Talent Acquisition Specialist</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="">
+<meta property="og:image" content="">
+<meta property="og:description content="Looking for a Job? Let me help you.">
+<meta name="description content="Looking for a Job? Let me help you.">
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Jobs', this, 'blue')">Jobs</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+
+<div id="Home" class="tabcontent">
+<h1></h1>
+<h2></h2>
+
+<!--add everything accordingly in later stage-->
+
+<h3> Recruitment- Term ignored by many of the companies</h3>
+<p>We all know the current market scenario, how recruiters are being ignored not only by companies but by candidates as well</p>
+<blockquote>
+<p>A good recruiting process focuses and aligns recruiters to deliver the best to the organization. Ultimately, recruiting really should be viewed as a business partner, someone who is critical to the sucess of the business
+</p>
+<cite>Mathew Cadwell-Head Of Talent,Instacart</cite>
+</div>
+
+
+
+<div id="Jobs" class="tabcontent">
+<h1> One must choose a right career path to determine their future</h1>
+
+<!-- need to add current openings, click links to direct to their respective openings site-->
+
+ </div>
+
+
+
+<div id="Contact" class="tabcontent">
+<p> Get in touch. <a href="">Click for contact details</a></p>
+<h3> Or fill up the form and let me get back to you</h3>
+
+<!--make form, include name, contact no, email, resume-->
+
+
+</div>
+
+
+
+<div id="About" class="tabcontent">
+<p>A recruiter with 5+ years of experience</p>
+<!--write about your experience, also add looking for a recruiter, hire me button-->
+
+  </div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+   
+</body>
+</html> 

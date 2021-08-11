@@ -1,0 +1,59 @@
+/* Place your CSS styles in this file */
+
+html {
+     background-image: url("img_homepage.gif") no repeat center fixed;
+}
+
+data-tab-content {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  background-color: royalblue;
+}
+body {
+	background-colour:rgba(124,24,52,0.1);
+	text-align:center;
+	border-style:double;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+.tab:active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+
+p {font-family: "Source Sans Pro", sans-serif;
+   font-size: x-small;
+   font-weight:normal;
+   font-color:Tomato;
+}
